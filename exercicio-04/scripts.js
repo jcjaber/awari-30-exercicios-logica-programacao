@@ -1,3 +1,4 @@
+// Author: José Cássio Jaber
 let n = prompt("Insira um valor: ")
 let sum = 0
 

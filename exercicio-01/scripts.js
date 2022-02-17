@@ -1,3 +1,4 @@
+//author: José Cássio Jaber
 let number = prompt("Insira um número:")
 
 for(i = 1; i <= 10; i++) {

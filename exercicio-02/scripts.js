@@ -1,3 +1,4 @@
+// Author: José Cássio Jaber
 let factor1 = 1
 let factor2 = 1
 
