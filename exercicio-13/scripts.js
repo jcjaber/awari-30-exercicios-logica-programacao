@@ -3,19 +3,27 @@
 const squareSideSize = prompt('I M P R E S S O R A  DE  Q U A D R A D O S\n Digite o tamanho do lado do seu quadro (entre 2 a 20)');
 
 const printSquare = () => {
-  let lines = '';
+  let squareTopBottom = '';
+  let squareMiddle = '* ';
 
   for (i = 0; i < squareSideSize; i++) {
-    lines += '* ';
+    squareTopBottom += '* ';
   }
-  lines += '\n';
-  let square = lines;
+  for(i = 0; i < squareSideSize-2; i++) {
+    squareMiddle += '  ';
+  }
 
-  if(squareSideSize > 1) {
-    for(i = 0; i < squareSideSize-1; i++) {
-    square += lines;
+  let square = squareTopBottom + '\n';
+
+  if(squareSideSize > 2) {
+    squareMiddle+= '*';
+    for(i = 0; i < squareSideSize-2; i++) {
+      square += squareMiddle + '\n';
     }
   }
+
+  square += squareTopBottom
+
   console.log(square);
 }
 
